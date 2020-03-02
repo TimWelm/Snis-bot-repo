@@ -416,7 +416,7 @@ require("child_process").exec("npm install", async function (err, stdout) {
         if (err) throw err;
       });
       if (!message.content.startsWith(prefix)) return;
-      // COMMANDS CHANNEL 
+      // COMMANDS CHANNEL
       if (config.Require_Commands_Channel.toLowerCase() == "true"
         && message.guild.roles.find(r => r.name.toLowerCase() == config.Bypass_Commands_Channel.toLowerCase())
         && message.member.roles.sort((a, b) => b.calculatedPosition - a.calculatedPosition).first().calculatedPosition < message.guild.roles.find(r => r.name.toLowerCase() == config.Bypass_Commands_Channel.toLowerCase()).calculatedPosition
