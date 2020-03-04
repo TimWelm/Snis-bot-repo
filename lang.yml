@@ -151,15 +151,15 @@ Help_Command:
     coins:
       usage: "-coins"
       description: "Check how many coins you have!"
-    ip:
-      usage: "-ip"
-      description: "Get the IP of the server!"
+#    ip:
+#      usage: "-ip"
+#      description: "Get the IP of the server!"
     level:
       usage: "-level"
       description: "Check your current level on the Discord server!"
-    links:
-      usage: "-links"
-      description: "Get important links related to the server!"
+#    links:
+#      usage: "-links"
+#      description: "Get important links related to the server!"
     suggest:
       usage: "-suggest"
       description: "Suggest something for the server!"
@@ -190,9 +190,9 @@ Help_Command:
     leveltop:
       usage: "-leveltop"
       description: "View the level leaderboard"
-    status:
-      usage: "-status"
-      description: "View the status of the minecraft server"
+#    status:
+#      usage: "-status"
+#      description: "View the status of the minecraft server"
   Admin:
     announce:
       usage: "-announce"
@@ -227,15 +227,15 @@ Help_Command:
     say:
       usage: "-say"
       description: "Create embeded messages!"
-    setprefix:
-      usage: "-setprefix"
-      description: "Set the bot's command prefix!"
+#    setprefix:
+#      usage: "-setprefix"
+#      description: "Set the bot's command prefix!"
     setstatus:
       usage: "-setstatus"
       description: "Set the bot's current status!"
-    update:
-      usage: "-update"
-      description: "Update the users about any changes happening."
+#    update:
+#      usage: "-update"
+#      description: "Update the users about any changes happening."
     vote:
       usage: "-poll"
       description: "Create a poll/vote for your users to vote on."
@@ -251,9 +251,9 @@ Help_Command:
     filter:
       usage: "-filter"
       description: "Manage the word filter"
-    key:
-      usage: "-key"
-      description: "Install an addon"
+#    key:
+#      usage: "-key"
+#      description: "Install an addon"
     kick:
       usage: "-kick"
       description: "Kick a user"
