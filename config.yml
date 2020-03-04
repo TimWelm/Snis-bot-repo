@@ -55,7 +55,7 @@ Chat_Logs_Blacklist:
 #                                    #
 ######################################
 # VARIABLES: (NOTE: This will only work in the Join_Message, Leave_Message and EMBED OPTIONS settings
-# {user} - This will print the user's username. 
+# {user} - This will print the user's username.
 # {tag} - This will print the user's name with their Discord tag (Example: Test#1234)
 # {total} - This will print the total amount of members in the Discord server
 
@@ -76,9 +76,9 @@ DM_Message: "-NONE"
 ### EMBED OPTIONS ###
 # (NOTE: This requires the Join_Message setting to be "embed"
 
-Join_Embed_Header: "Welcome {user} to the Snis Skyblock Official Discord!"
+Join_Embed_Header: "Welcome {tag} to the Snis Skyblock Official Discord! [#{total}]"
 # This is the title of the embed
-Join_Embed_Description: "\n:pushpin: INFORMATION\n\n"
+Join_Embed_Description: ""
 # This is the description or main field of the embed
 Join_Embed_Footer: ""
 # This is the footer of the embed. Put "-NONE" to not have a footer in the embed.
@@ -112,7 +112,7 @@ Leave_Message: "embed"
 
 Leave_Embed_Header: "User Left!"
 # This is the title of the embed
-Leave_Embed_Description: "Goodbye, **{user}**! "
+Leave_Embed_Description: "Goodbye, **{tag}**! "
 # This is the description or main field of the embed
 Leave_Embed_Footer: "-NONE"
 # This is the footer of the embed. Put "-NONE" to not have a footer in the embed.
@@ -128,9 +128,9 @@ Leave_Embed_Timestamp: "true"
 ########################################
 
 Anti_Advertisement_System: "true"
-# This will enable or disable the chat anti-advertisement 
+# This will enable or disable the chat anti-advertisement
 Status_Antiadvertisement_System: "true"
-# This will enable or disable the status anti-advertisement 
+# This will enable or disable the status anti-advertisement
 
 Advertisement_Bypass_Role: "Staff"
 Status_Advertisement_Notification_Channel: "admin"
@@ -186,14 +186,14 @@ ShopEmbed_Item1_Description: "Cost - 750 coins (Use -buy autobuyer to buy!)"
 #ShopEmbed_Item3_Description: "Cost - 7500 coins (Use -buy mvp+ to buy!)"
 
 ### EMBED OPTIONS ###
-# Variables: 
+# Variables:
 # {page} - This will print the current page of the leaderboard you're viewing.
 # {totalcoins} - This will print the total amount of coins collected from all users
 
 Coin_Top_Embed_Title: "Coin Leaderboard (Page #{page})"
 # This is the title of the embed
 Coin_Top_Embed_Footer: "Total Coins Collected"
-# Put "-NONE" to not have a footer in the embed. 
+# Put "-NONE" to not have a footer in the embed.
 
 
 Level_System: "false"
@@ -264,10 +264,10 @@ Ticket_Logs_Channel: "ticket-logs"
 # When a ticket is opened or closed a log message will be sent here.
 Ticket_Topic: "User: {user} | Reason: {reason} | Time {time} | ID {id}"
 # Put "-NONE" to not have a ticket topic.
-# VARIABLES: 
+# VARIABLES:
 # {user} - User that created the ticket
 # {reason} - Reason the ticket was created for
-# {time} - Time the ticket was created at 
+# {time} - Time the ticket was created at
 # {id} - ID of the ticket
 
 ### EMBED OPTIONS ###
@@ -332,7 +332,7 @@ Gamemode_Three_Query_URL: "https://api.minetools.eu/ping/play.example.com/25568"
 Verification_System: "true"
 # This will enable or disable the verification system
 Verification_Role: "Verified"
-# This is the role users will get after verifying 
+# This is the role users will get after verifying
 Verification_Emoji: "✅"
 # This is the emoji users must react with in order to get verified
 Verification_Message_ID: "682568567488774164"
