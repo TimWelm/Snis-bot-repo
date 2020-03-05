@@ -21,9 +21,9 @@ Staff_Help_Menu: "true"
 
 Require_Commands_Channel: "true"
 # Require Commands to be sent in the bot spam channel
-Commands_Channel: "commands"
+Commands_Channel: "bot-commands"
 # Bot Commands channel, only needed if Require_Commands_Channel is "true".
-Bypass_Commands_Channel: "inviter"
+Bypass_Commands_Channel: "Admin"
 # This is the rank required in order to run commands outside of the commands channel.
 
 
@@ -40,7 +40,7 @@ Blacklist_Role: "Blacklisted"
 
 
 ### IP Command ###
-Server_IP: "Play.earthsmp.xyz"
+Server_IP: "N/A"
 # This is the IP that will be shown in the embed when running the ip command.
 IP_Embed_Header: "Server IP"
 # This is the title of the IP embed.
@@ -55,7 +55,7 @@ Chat_Logs_Blacklist:
 #                                    #
 ######################################
 # VARIABLES: (NOTE: This will only work in the Join_Message, Leave_Message and EMBED OPTIONS settings
-# {user} - This will print the user's username. 
+# {user} - This will print the user's username.
 # {tag} - This will print the user's name with their Discord tag (Example: Test#1234)
 # {total} - This will print the total amount of members in the Discord server
 
@@ -76,11 +76,11 @@ DM_Message: "-NONE"
 ### EMBED OPTIONS ###
 # (NOTE: This requires the Join_Message setting to be "embed"
 
-Join_Embed_Header: "User Joined!"
+Join_Embed_Header: "Welcome {tag} to the Snis Skyblock Official Discord! [#{total}]"
 # This is the title of the embed
-Join_Embed_Description: "Welcome {user} to SMP Earth ask someone with the invite role to be added to the whitelist!"
+Join_Embed_Description: ""
 # This is the description or main field of the embed
-Join_Embed_Footer: "IP: play.earthsmp.xyz"
+Join_Embed_Footer: ""
 # This is the footer of the embed. Put "-NONE" to not have a footer in the embed.
 Join_Embed_Timestamp: "true"
 # This will add the time the user joined at to the embed's footer if set to "true"
@@ -112,7 +112,7 @@ Leave_Message: "embed"
 
 Leave_Embed_Header: "User Left!"
 # This is the title of the embed
-Leave_Embed_Description: "Goodbye, **{user}**! "
+Leave_Embed_Description: "Goodbye, **{tag}**! "
 # This is the description or main field of the embed
 Leave_Embed_Footer: "-NONE"
 # This is the footer of the embed. Put "-NONE" to not have a footer in the embed.
@@ -128,9 +128,9 @@ Leave_Embed_Timestamp: "true"
 ########################################
 
 Anti_Advertisement_System: "true"
-# This will enable or disable the chat anti-advertisement 
+# This will enable or disable the chat anti-advertisement
 Status_Antiadvertisement_System: "true"
-# This will enable or disable the status anti-advertisement 
+# This will enable or disable the status anti-advertisement
 
 Advertisement_Bypass_Role: "Staff"
 Status_Advertisement_Notification_Channel: "admin"
@@ -159,41 +159,41 @@ Coin_Amount: 1
 Shop_System: "true"
 # This will enable or disable the shop system. If disabled, this will disable both the shop and buy commands.
 
-Item_1: "vip"
+Item_1: "autobuyer"
 # This is the name of the item. The user will use this name to buy the item.
-Item_1_Price: 350
+Item_1_Price: 750
 # This is the coins the user must pay to purchase the item.
-Item_1_Role: "vip"
+Item_1_Role: "AutoBuyer"
 # This is the role that will be given when a user purchases the item.
 
-Item_2: "mvp"
-Item_2_Price: 750
-Item_2_Role: "mvp"
+#Item_2: "mvp"
+#Item_2_Price: 750
+#Item_2_Role: "mvp"
 
-Item_3: "mvp+"
-Item_3_Price: 1500
-Item_3_Role: "mvp+"
+#Item_3: "mvp+"
+#Item_3_Price: 1500
+#Item_3_Role: "mvp+"
 
-ShopEmbed_Header: "Server Shop"
+ShopEmbed_Header: "Script Shop"
 # This is the title of the shop
-ShopEmbed_Item1_SubTitle: "VIP RANK"
+ShopEmbed_Item1_SubTitle: "Auto Buyer Script"
 # This is the sub title of the first item
-ShopEmbed_Item1_Description: "Cost - 3500 coins (Use -buy vip to buy!)"
+ShopEmbed_Item1_Description: "Cost - 750 coins (Use -buy autobuyer to buy!)"
 # This is the description of the first item
-ShopEmbed_Item2_SubTitle: "MVP RANK"
-ShopEmbed_Item2_Description: "Cost - 5000 coins (Use -buy mvp to buy!)"
-ShopEmbed_Item3_SubTitle: "MVP+ RANK"
-ShopEmbed_Item3_Description: "Cost - 7500 coins (Use -buy mvp+ to buy!)"
+#ShopEmbed_Item2_SubTitle: "MVP RANK"
+#ShopEmbed_Item2_Description: "Cost - 5000 coins (Use -buy mvp to buy!)"
+#ShopEmbed_Item3_SubTitle: "MVP+ RANK"
+#ShopEmbed_Item3_Description: "Cost - 7500 coins (Use -buy mvp+ to buy!)"
 
 ### EMBED OPTIONS ###
-# Variables: 
+# Variables:
 # {page} - This will print the current page of the leaderboard you're viewing.
 # {totalcoins} - This will print the total amount of coins collected from all users
 
 Coin_Top_Embed_Title: "Coin Leaderboard (Page #{page})"
 # This is the title of the embed
 Coin_Top_Embed_Footer: "Total Coins Collected"
-# Put "-NONE" to not have a footer in the embed. 
+# Put "-NONE" to not have a footer in the embed.
 
 
 Level_System: "false"
@@ -225,17 +225,17 @@ Leveltop_Embed_Footer: "Total XP Collected"
 
 Giveaway_System: "true"
 # This will enable or disable the giveaway system
-Emoji: ":tada:"
+Emoji: ":Tada:"
 # This is Discord's emoji variable for the emoji that you want users to react to in order to enter the giveaway.
 Emoji_Unicode: "🎉"
 # This is the emoji unicode for the emoji that you want users to react to in order to enter the giveaway.
 Max_Giveaways: 5
 # This is the maximum amount of giveaways you can have running that the same time.
-Giveaway_Create_Required_Rank: "Inviter"
+Giveaway_Create_Required_Rank: "Admin"
 # This is the rank required to run the gcreate command.
-Giveaway_Delete_Required_Rank: "Inviter"
+Giveaway_Delete_Required_Rank: "Admin"
 # This is the rank required to run the gdelete command.
-Giveaway_ReRoll_Required_Rank: "Inviter"
+Giveaway_ReRoll_Required_Rank: "Admin"
 # This is the rank required to run the greroll command.
 Giveaway_Channel: "giveaways"
 # This is the channel giveaways will be posted in.
@@ -254,9 +254,9 @@ User_Ticket_Limit: 2
 # This is the limit of tickets a certain user can have open at one time.
 Ticket_Require_Reason: "false"
 # If set to true, users will be required to add a reason when opening a ticket.
-Ticket_Support_Role: "Inviter"
+Ticket_Support_Role: "Admin"
 # This is the role required to see the tickets, run the add, remove, and close command.
-Close_All_Role: "Inviter"
+Close_All_Role: "Admin"
 # This is the role required to close all tickets at once.
 Ticket_Category: "Tickets"
 # This is the category tickets will be put in.
@@ -264,17 +264,17 @@ Ticket_Logs_Channel: "ticket-logs"
 # When a ticket is opened or closed a log message will be sent here.
 Ticket_Topic: "User: {user} | Reason: {reason} | Time {time} | ID {id}"
 # Put "-NONE" to not have a ticket topic.
-# VARIABLES: 
+# VARIABLES:
 # {user} - User that created the ticket
 # {reason} - Reason the ticket was created for
-# {time} - Time the ticket was created at 
+# {time} - Time the ticket was created at
 # {id} - ID of the ticket
 
 ### EMBED OPTIONS ###
 
 Ticket_Embed_Title: "Ticket"
 # This is the title of the embed
-Ticket_Embed_Description: "{user}, thank you for creating a support ticket. Reason: {reason}"
+Ticket_Embed_Description: "{user}, thank you for creating a support ticket. \nReason: {reason}\n\nStaff will help you soon!"
 # This is the description or main field of the embed
 # VARIABLES:
 # {user} - This will print to the user that opened the ticket in the embed description
@@ -294,9 +294,9 @@ Ticket_Embed_Timestamp: "true"
 
 Filter_System: "true"
 # This will enable or disable the filter system.
-Filter_Bypass_Role: "Inviter"
+Filter_Bypass_Role: "Admin"
 # This is the rank required to bypass the filter system and say blacklisted words.
-Filter_Required_Rank: "Inviter"
+Filter_Required_Rank: "Admin"
 # This is the rank required to run the filter command and edit the filter system.
 
 
@@ -307,9 +307,9 @@ Filter_Required_Rank: "Inviter"
 #                                  #
 ####################################
 
-Server_One_Name: "Earth SMP"
-Server_One_URL: "https://api.minetools.eu/ping/play.earthsmp.xyz/25565"
-Server_One_Query_URL: "https://api.minetools.eu/ping/play.earthsmp.xyz/25565"
+Server_One_Name: "N/A"
+Server_One_URL: ""
+Server_One_Query_URL: ""
 
 ### VV OPEN A TICKET IF YO WANT TO USE THESE OR MORE VV ##
 Gamemode_Two_Name: "Gamemode2"
@@ -329,9 +329,9 @@ Gamemode_Three_Query_URL: "https://api.minetools.eu/ping/play.example.com/25568"
 ########################################
 # NOTE: Be sure to make the Join_Role a role like "Unverified" or "Unregistered" and make that role have proper permissions to only see X channel(s)
 
-Verification_System: "false"
+Verification_System: "true"
 # This will enable or disable the verification system
-Verification_Role: "Member"
+Verification_Role: "Verified"
 # This is the role users will get after verifying 
 Verification_Emoji: "✅"
 # This is the emoji users must react with in order to get verified
@@ -352,13 +352,13 @@ Blacklist_Command: "true"
 Bug_Report_Command: "true"
 Clear_Command: "true"
 Help_Command: "true"
-IP_Command: "true"
+IP_Command: "false"
 Kick_Command: "true"
-Links_Command: "true"
+Links_Command: "false"
 Lock_Command: "true"
 Mute_Command: "true"
 Say_Command: "true"
-Set_Prefix_Command: "true"
+Set_Prefix_Command: "false"
 Set_Status_Command: "true"
 Suggest_Command: "true"
 Unban_Command: "true"
@@ -366,11 +366,11 @@ Unlock_Command: "true"
 Unmute_Command: "true"
 Update_Command: "true"
 Vote_Command: "true"
-Status_Command: "true"
+Status_Command: "false"
 Report_Command: "true"
-Msg_All_Command: "true"
+Msg_All_Command: "false"
 Remind_Me_Command: "true"
-Google_Command: "true"
+Google_Command: "false"
 Temp_Channel_Command: "true"
 Reports_Command: "true"
 Give_Command: "true"
@@ -384,7 +384,7 @@ Take_Command: "true"
 Ban_Required_Rank: "Admin"
 Unban_Required_Rank: "Admin"
 Kick_Required_Rank: "Admin"
-Staff_Help_Menu_Required_Rank: "Inviter"
+Staff_Help_Menu_Required_Rank: "Helper"
 Clear_Required_Rank: "Admin"
 Say_Required_Rank: "Admin"
 Accept_Deny_Suggestions: "Admin"
@@ -411,15 +411,15 @@ Take_Required_Rank: "Admin"
 ### CHANNELS ###
 Bug_Reports_Channel: "bug-reports"
 # This is the channel bug reports will be sent to.
-Suggestions_Channel: "suggestions2"
+Suggestions_Channel: "suggestions"
 # This is the channel suggestions will be set to.
 Updates_Channel: "updates"
 # This is the channel updates will be sent to.
-Vote_Channel: "polls2"
+Vote_Channel: "polls"
 # This is the channel votes will be sent to.
-Announcement_Channel: "announcements2"
+Announcement_Channel: "announcements"
 # This is the channel announcements will be sent to.
-Punishment_Logs_Channel: "logs"
+Punishment_Logs_Channel: "punishment-logs"
 # This is the channel punishment logs will be sent to.
 Reports_Channel: "reports"
 # This is the channel reports will be sent to.
@@ -431,14 +431,14 @@ Reports_Channel: "reports"
 #                                  #
 ####################################
 
-Announcement_Auto_Tag: "true"
+Announcement_Auto_Tag: "false"
 # This will auto tag @everyone in the announcements channel if set to true.
 
 ### EMBED OPTIONS ###
 Announcement_Embed_Thumbnail: "https://images-ext-1.discordapp.net/external/veZptUu_KDKmwtUJX5QT3QxESYCaRp4_k0XUwEQxubo/https/i.imgur.com/e9DIB8e.png"
 # This is the image link that will be put at the top right corner of the embed. Put "-NONE" to not have a thumbnail in the embed.
 # Put "{Bot_PFP}" to use your bot's profile picture. Put "{Executor_PFP}" to use the command executor's profile picture.
-Announcement_Embed_Footer: "Example Network"
+Announcement_Embed_Footer: "Snis Skyblock"
 # This is the footer of the embed. Put "-NONE" to not have a footer in the embed.
 Announcement_Embed_Timestamp: "true"
 # This will add the time the announcement was posted to the embed's footer if set to "true"
@@ -478,8 +478,6 @@ Role_Menu_Roles:
     🇵: "Polls"
     🇪: "Events"
     🎉: "Giveaways"
-  Game:
-    🇲: "Minecraft"
 # Use the emoji as the key and the role as the value.
 
 ####################################
