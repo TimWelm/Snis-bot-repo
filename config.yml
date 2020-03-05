@@ -3,7 +3,7 @@
 #       CoreBot Config        #
 #                             #
 ###############################
-Bot_Token: "NTU1Mjg3MDk1NjM2MzkzOTg0.Xle1IA.qSpOM_gY27FA8uInPTPVE7sHZbM"
+Bot_Token: "NTU1Mjg3MDk1NjM2MzkzOTg0.XmD5tQ.kOFI6GWqMmFqNpG8iyUNjzRuxgw"
 # This is your bot application's token. You can get this by going to discord's developer portal, creating an application, then turning the application into a bot.
 Bot_Key: "PUT-BOT-KEY-HERE"
 # This is the bot's key. You can get a key by joining our Discord (https://corebot.dev/support) and verifying that you purchased the bot.
@@ -332,10 +332,10 @@ Gamemode_Three_Query_URL: "https://api.minetools.eu/ping/play.example.com/25568"
 Verification_System: "true"
 # This will enable or disable the verification system
 Verification_Role: "Verified"
-# This is the role users will get after verifying
+# This is the role users will get after verifying 
 Verification_Emoji: "✅"
 # This is the emoji users must react with in order to get verified
-Verification_Message_ID: "682568567488774164"
+Verification_Message_ID: "PUT-MESSAGE-ID-HERE"
 # This is the ID of the message users must react to in order to get verified
 
 ####################################
@@ -468,18 +468,16 @@ Twitter_Link: "-NONE"
 #                                  #
 ####################################
 
-Role_Menu: "false"
+Role_Menu: "true"
 # This will enable or disable the role menu command.
-Rolemenu_Required_Rank: "Verified"
+Rolemenu_Required_Rank: "Admin"
 # This is the rank required to run the rolemenu command.
 Role_Menu_Roles:
-  Namecolor:
-    🟥: "Red"
-    🟧: "Orange"
-    🟨: "Yellow"
-    🟩: "Green"
-    🟦: "Blue"
-    🟪: "Purple"
+  Server:
+    🇺: "Updates"
+    🇵: "Polls"
+    🇪: "Events"
+    🎉: "Giveaways"
 # Use the emoji as the key and the role as the value.
 
 ####################################
