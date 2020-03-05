@@ -63,7 +63,7 @@ Chat_Logs_Blacklist:
 
 Join_Messages: "true"
 # This will enable or disable join messages.
-Join_Role: "Unverified"
+Join_Role: "Member"
 # This is the role given to users when they join. Put "-NONE" to not give a role on join.
 Join_Message_Channel: "welcome"
 # This is the channel welcome mesages will be sent in.
