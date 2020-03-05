@@ -9,7 +9,7 @@ Bot_Key: "PUT-BOT-KEY-HERE"
 # This is the bot's key. You can get a key by joining our Discord (https://corebot.dev/support) and verifying that you purchased the bot.
 Bot_Prefix: "-"
 # This is the symbol you will have to use to run all of CoreBot's commands.
-Theme_Color: "#ffffff"
+Theme_Color: "#00b51b"
 # This is the HEX color that will be used in all the bot's embeds.
 Error_Color: "#f52c2c"
 # This is the HEX color that will be used in all error embeds (Wrong channel, syntax errors, etc.)
