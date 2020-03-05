@@ -335,7 +335,7 @@ Verification_Role: "Verified"
 # This is the role users will get after verifying 
 Verification_Emoji: "✅"
 # This is the emoji users must react with in order to get verified
-Verification_Message_ID: "PUT-MESSAGE-ID-HERE"
+Verification_Message_ID: "685137099447730196"
 # This is the ID of the message users must react to in order to get verified
 
 ####################################
