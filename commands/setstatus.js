@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
     if (!role) return message.channel.send(`Command failed. Check console.`).then(console.log(`ERROR! The ${config.Set_Status_Required_Rank} role was not found, please create it.`))
     let hasPermission = message.member.roles.sort((a, b) => b.calculatedPosition - a.calculatedPosition).first().calculatedPosition >= role.calculatedPosition;
     if (!hasPermission) return message.reply(lang.Insufficient_Permission_Message)
-    if (!args[0]) return message.reply(`Usage: -setstatus (type) (new status) )\n(Example types: Watching, Playing, Streaming or Listening)`)
+    if (!args[0]) return message.reply(`Usage: -setstatus (type) (new status) )`)
     if (args[0].toUpperCase() !== "WATCHING" && args[0].toUpperCase() !== "PLAYING" && args[0].toUpperCase() !== "STREAMING" && args[0].toUpperCase() !== "LISTENING") return message.reply("Wrong status! Use `playing`, `watching`, `streaming`, or `listening`");
     if (!args[1]) return message.reply("Please provide what you would like to change my status to.")
     bot.user.setActivity(args.slice(1).join(" "), { type: args[0].toUpperCase() });

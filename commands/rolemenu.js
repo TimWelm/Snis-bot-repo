@@ -8,8 +8,8 @@ module.exports.run = async (bot, message, args) => {
     if (!role) return message.channel.send(`Command failed. Check console.`).then(console.log(`ERROR! The ${config.Rolemenu_Required_Rank} role was not found, please create it.`))
     let hasPermission = message.member.roles.sort((a, b) => b.calculatedPosition - a.calculatedPosition).first().calculatedPosition >= role.calculatedPosition;
     if (!hasPermission) return message.channel.send(lang.Insufficient_Permission_Message);
-    //if (args.length == 0) return message.channel.send(Embed({ preset: 'invalidargs', usage: 'rolemenu <menu>' }));
-    const menu = config.Role_Menu_Roles[Namecolor];
+    if (args.length == 0) return message.channel.send(Embed({ preset: 'invalidargs', usage: 'rolemenu <menu>' }));
+    const menu = config.Role_Menu_Roles[args[0]];
     if (!menu) return message.channel.send(Embed({ title: "**Invalid Menu**", description: "That role menu does not exist. Rolemenu names are **case-sensitive**." }));
     const embed = new Discord.RichEmbed()
         .setColor(config.Theme_Color)
