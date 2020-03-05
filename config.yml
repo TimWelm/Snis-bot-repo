@@ -331,7 +331,7 @@ Gamemode_Three_Query_URL: "https://api.minetools.eu/ping/play.example.com/25568"
 
 Verification_System: "true"
 # This will enable or disable the verification system
-Verification_Role: "Verified"
+Verification_Role: "Unverified"
 # This is the role users will get after verifying 
 Verification_Emoji: "✅"
 # This is the emoji users must react with in order to get verified
