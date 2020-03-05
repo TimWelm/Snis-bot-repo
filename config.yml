@@ -27,7 +27,7 @@ Bypass_Commands_Channel: "Admin"
 # This is the rank required in order to run commands outside of the commands channel.
 
 
-Lock_Commmand_Embed_Special_Color: "false"
+Lock_Commmand_Embed_Special_Color: "true"
 # Setting it to "true" will make the lock command embed green
 Unlock_Command_Embed_Special_Color: "true"
 # Setting it to "true" will make the unlock command embed red
