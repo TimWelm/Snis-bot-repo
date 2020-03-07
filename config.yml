@@ -225,7 +225,7 @@ Leveltop_Embed_Footer: "Total XP Collected"
 
 Giveaway_System: "true"
 # This will enable or disable the giveaway system
-Emoji: ":Tada:"
+Emoji: ":tada:"
 # This is Discord's emoji variable for the emoji that you want users to react to in order to enter the giveaway.
 Emoji_Unicode: "🎉"
 # This is the emoji unicode for the emoji that you want users to react to in order to enter the giveaway.
