@@ -263,3 +263,6 @@ Help_Command:
     unlock:
       usage: "-unlock"
       description: "Turn off lockdown mode for a channel"
+    serverstats:
+      usage: "-serverstats"
+      description: "Check the server stats"
